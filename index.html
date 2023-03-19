@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks website Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logo.png" alt="img not loaded" /></a>
+            <ul>
+                <li class="rect"><a href="#">Home</a></li>
+                <li class="rect"><a href="#">Menu</a></li>
+                <li class="rect"><a href="#">What's New</a></li>
+                <li class="rect"><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's Not just Coffee<br />It's<span>Starbucks</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                    fugit doloribus optio veritatis, perspiciatis debitis neque
+                    assumenda error cum nam minima corporis, sint obcaecati? Accusantium
+                    adipisci, porro nostrum cum harum harum est asperiores distinctio
+                    repudiandae officiis explicabo rem nihil qui nulla illum
+                    necessitatibus animi deleniti nesciunt aut reiciendis vitae veniam
+                    officia sunt sed accusantium consect velit eveniet quam sequi! Hic
+                    architecto iusto nemo magnam! A quae perferendis ullam libero
+                    eligendi iure ut voluptates nisi voluptate tempora volup magnam,
+                    commodi quis natus voluptates quo accusamus dolor, nostrum dolorum
+                    in quos nostrum illo hic officiis, sequi molestiae. Sit soluta et
+                    cumque Lorem ipsum dolor sit.
+                    <a href="#"> Learn More </a>
+                </p>
+            </div>
+
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks" />
+            </div>
+        </div>
+        <ul class="thumb">
+            <li>
+                <img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')" />
+            </li>
+            <li>
+                <img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')" />
+            </li>
+            <li>
+                <img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')" />
+            </li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="facebook.png" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="twitter.png" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="instagram.png" /></a>
+            </li>
+        </ul>
+    </section>
+    <div class="product-section">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Food.jpg">
+                <h3>Sandwitch</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatem quis, soluta minus quos laborum quid 
+                    quasi rerum quibusdam perspiciatis!
+                </p>
+                <button>Buy now</button>
+            </div>
+            <div class="product">
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/105000.webp">
+                <h3>Vanilla Sweet Cream Cold</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatem quis, soluta minus quos laborum quid
+                    quasi rerum quibusdam perspiciatis!
+                </p>
+                <button>Buy now</button>
+            </div>
+            <div class="product">
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/100447.webp">
+                <h3>Signature Hot Chocolate</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Voluptatem quis, soluta minus quos laborum quid 
+                    quasi rerum quibusdam perspiciatis!
+                </p>
+                <button>Buy now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>123 Main St.</li>
+                    <li>Anytown, USA 12345</li>
+                    <li>(123) 456-7890</li>
+                    <li>info@example.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector(".starbucks").src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector(".circle");
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Voluptatem quis, soluta minus quos laborum quidem? 
+Quisquam quasi rerum quibusdam perspiciatis!
